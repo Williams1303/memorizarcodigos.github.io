@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Juego de memoria de códigos</title>
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+  <div id="popup">
+  <div id="popup-content">
+    <h2>¡Actualizaciones importante!</h2>
+     <p>Se actualizó la interfaz de ayuda para que sea más entendible</p>
+     <p>Se agregó los códigos completos de frutas</p>
+     <p></p>
+     <h2>¡Próximas actualizaciones!</h2>
+     <li>agregar codigos de frutas</li>
+     <li>agregar codigos de pollo braza</li>
+     <li>Agregar codigos de Cervezas</li>
+     <li>crear un tablero de puntuacion</li>
+     <li>crear cronometro</li>
+     <li>crear liga competitiva</li>
+     <button id="close-button">Cerrar</button>
+  </div>
+</div>
+  <div id="game-container">
+    <div id="code-container">
+      <h1>Ingresa el código:</h1>
+      <input type="text" id="code-input">
+      <button id="submit-code-button" type="submit">Enviar</button>
+      <div id="error-message"></div>
+      <div id="failed-attempts">Fallos: 
+        <span id="failed-count">0</span>
+        <button id="help-button">Ayuda</button>
+        <div id="help-container" style="display:none;">
+        <h2>Códigos y productos:</h2>
+        <ul>
+          <li>
+          <button id="frutas-button">FRUTAS</button>
+          <ul id="frutas-lista" style="display:none;">
+           <li><strong>7753150000149:</strong> aguaymanto fresco pelado x 200gr</li>
+          <li><strong>7759436000124:</strong> arandano hortifrutc 125gr</li>
+          <li><strong>7759436000155:</strong> arandano hortifrutc 300gr</li>
+          <li><strong>4397:</strong> carambola m x kg</li>
+          <li><strong>4476:</strong> chirimoya m x kg</li>
+          <li><strong>7756275000032:</strong> ciruelo de seda x 500gr</li>
+          <li><strong>7755984000029:</strong> ciruelillo x 600gr</li>
+          <li><strong>4398:</strong> cocona m x kg</li>
+          <li><strong>7755413000705:</strong> concentrado de emoliente x 2kg</li>
+          <li><strong>4125:</strong> fresa americana x kg</li>
+          <li><strong>4006:</strong> granada</li>
+          <li><strong>2979888:</strong> granadilla market</li>
+          <li><strong>4523:</strong> guanabana m x kg</li>
+          <li><strong>4526:</strong> higo fresco metro</li>
+          <li><strong>4049:</strong> kiwi americano</li>
+          <li><strong>4491:</strong> lima m x kg</li>
+          <li><strong>4626:</strong> lucuma madura empacada</li>
+          <li><strong>4436:</strong> mandarina con pepa m x kg</li>
+          <li><strong>4617:</strong> mandarina costa m x kg</li>
+          <li><strong>4534:</strong> mandarina s/pepa m x kg</li>
+          <li><strong>4128:</strong> mango ataulfo x kg</li>
+          <li><strong>4487:</strong> mango edward m x kg</li>
+          <li><strong>4493:</strong> mango haden m x kg</li>
+          <li><strong>4545:</strong> mango kafro metro</li>
+          <li><strong>4542:</strong> mango kent m x kg</li>
+          <li><strong>4448:</strong> manzana americana royal gala</li>
+          <li><strong>4447:</strong> manzana americana verde x kg</li>
+          <li><strong>4127:</strong> manzana americana washington</li>
+          <li><strong>4506:</strong> manzana delicia kinder m x kg</li>
+          <li><strong>4697:</strong> manzana fuji importada</li>
+          <li><strong>4898:</strong> manzana israel añawi m x kg</li>
+          <li><strong>4525:</strong> manzana rayada m x kg</li>
+          <li><strong>4489:</strong> maracuya m x kg</li>
+          <li><strong>4490:</strong> melocoton metro</li>
+          <li><strong>4456:</strong> melon coquito m x kg</li>
+          <li><strong>4129:</strong> melon honey</li>
+          <li><strong>4146:</strong> melon magenta x kg</li>
+          <li><strong>4718:</strong> melon piel de sapo</li>
+          <li><strong>8642:</strong> melon tropial metro</li>
+          <li><strong>4383:</strong> membrillo m x kg</li>
+          <li><strong>29750177:</strong> mix para emoliente</li>
+          <li><strong>4646:</strong> naranja de mesa americana</li>
+          <li><strong>4435:</strong> naranja de mesa s/pepa m x kg</li>
+          <li><strong>4856:</strong> naraja p/jugo chanchamayo m x kg</li>
+          <li><strong>4539:</strong> nectarin</li>
+          <li><strong>4382:</strong> palta fuerte m x kg</li>
+          <li><strong>4392:</strong> palta nava</li>
+          <li><strong>4455:</strong> palta gueen metro</li>
+          <li><strong>4912:</strong> papaya hawaiana super</li>
+          <li><strong>258999:</strong> papaya m x kg</li>
+          <li><strong>4394:</strong> pepino melon m x kg</li>
+          <li><strong>4575:</strong> pera canela importada</li>
+          <li><strong>4056:</strong> pera italiana x kg</li>
+          <li><strong>4441:</strong> pera packhams x kg</li>
+          <li><strong>4389:</strong> piña golden m x kg</li>
+          <li><strong>4197:</strong> piña para jugo m x kg</li>
+          <li><strong>4859:</strong> pitahaya amarilla</li>
+          <li><strong>4755:</strong> pitahaya roja metro</li>
+          <li><strong>4457:</strong> platano bellaco x kg</li>
+          <li><strong>4896:</strong> platano biscocho</li>
+          <li><strong>256931:</strong> platano isla metro x kg</li>
+          <li><strong>4865:</strong> platano organico</li>
+          <li><strong>256935:</strong> platano palillo</li>
+          <li><strong>4999:</strong> platano seda m x kg</li>
+          <li><strong>8151:</strong> sandia lady dell metro x kg</li>
+          <li><strong>4784:</strong> sandia m x kg</li>
+          <li><strong>8358:</strong> sandia sugar baby metro</li>
+          <li><strong>4450:</strong> tangelo especial m x kg</li>
+          <li><strong>4452:</strong> tangelo s/pepa m granel x kg</li>
+          <li><strong>4486:</strong> toronja ruby m x kg</li>
+          <li><strong>4437:</strong> toronja sin pepa m x kg</li>
+          <li><strong>4299:</strong> tuna andina</li>
+          <li><strong>4385:</strong> tuna roja m x kg</li>
+          <li><strong>4384:</strong> tuna verde m x kg</li>
+          <li><strong>4119:</strong> uva borgoña x kg</li>
+          <li><strong>7754078000877:</strong> uva de mesa variedad swer globe x 2lb</li>
+          <li><strong>256469:</strong> uva jack salute x kg</li>
+          <li><strong>4535:</strong> uva red globe m x kg</li>
+          <li><strong>4393:</strong> uva sultana nac m x kg</li>
+          <li><strong>4395:</strong> uva vallet metro</li> 
+          </ul>
+      </li>
+          <li>
+            <button id="verduras-button">Verduras</button>
+            <ul id="verduras-lista" style="display:none;">
+              <li>proximamente</li>
+            </ul>
+          </li>
+          <li>
+            <button id="pollo-brasa-button">Pollo brasa</button>
+            <ul id="pollo-brasa-lista" style="display:none;">
+              <li>proximamente</li>
+            </ul>
+          </li>
+          <li>
+            <button id="cervezas-button">Cervezas</button>
+            <ul id="cervezas-lista" style="display:none;">
+              <li>proximamente</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+    <div id="reset-container" style="display: none;">
+      <h1>Has alcanzado el límite de intentos fallidos</h1>
+      <h2>Ingresa la contraseña para reiniciar el juego:</h2>
+      <input type="password" id="reset-password-input">
+      <button id="submit-reset-button">Reiniciar juego</button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
+
+

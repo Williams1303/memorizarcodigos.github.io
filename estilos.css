@@ -1,0 +1,210 @@
+/* Estilos generales */
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+#game-container {
+  width: 400px;
+  margin: 50px auto;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: float 3s ease-in-out infinite;
+  animation-direction: alternate;
+  animation-delay: 0s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+h1 {
+  font-size: 24px;
+}
+
+/* Estilos para el contenedor del código */
+#code-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#code-input {
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 24px;
+  font-family: Courier, monospace;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-align: right;
+  background-color: #f9f9f9;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+
+#submit-code-button {
+  align-self: flex-end;
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+/* Estilos para el boton de ayuda */
+#help-button {
+  position: fixed;
+  top: 20px; /* ajusta el valor de 'top' según tu preferencia */
+  right: -730px; /* ajusta el valor de 'right' según tu preferencia */
+  background-repeat: no-repeat;
+  background-position: center;
+  text-indent: -9999px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  margin: -50px auto;
+  background-color: red;
+}
+
+
+#help-container {
+  position: fixed;
+  top: -20px;
+  right: -700px;
+  float: none;
+  color: green;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: transparent;
+  max-height: 90%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#frutas-button,
+#verduras-button,
+#pollo-brasa-button,
+#cervezas-button {
+  display: block;
+  margin: 5px 0;
+  padding: 5px 20px;
+}
+#popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 9999;
+}
+
+#popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 350px;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#close-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Estilos para el mensaje de error */
+#error-message {
+  margin-top: 10px;
+}
+
+#error-message.correct {
+  color: green;
+  transition: color 0.5s ease-in-out;
+}
+
+#error-message.incorrect {
+  color: red;
+}
+
+
+/* Estilos para el contador de intentos fallidos */
+#failed-attempts {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Estilos para el contenedor de reinicio */
+#reset-container {
+  margin-top: 700px;
+  border: 1px solid black;
+  position: fixed;
+  left: 50%;
+  top: -100px;
+  transform: translateX(-50%);
+  background-color: transparent;
+  width: 400px;
+  height: 500px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  border-radius: 8px 8px 0 0;
+  animation: slide-in 0.5s forwards;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translate(-50%, -150%);
+  }
+  to {
+    transform: translate(-50%, -50%);
+  }
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#reset-password-input {
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#submit-reset-button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
