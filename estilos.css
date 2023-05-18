@@ -1,33 +1,24 @@
 /* Estilos generales */
 body {
-  background-color: #f5f5f5;
+  background-color: #f5f5f5; /* Color de fondo similar al de una caja registradora */
+  background-image: linear-gradient(to bottom, #dcdcdc, #e9e9e9); /* Efecto degradado para agregar textura */
   font-family: Arial, sans-serif;
+  padding: 20px; /* Agrega un poco de espacio alrededor del contenido */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra para simular una caja */
 }
 
 #game-container {
-  width: 400px;
-  margin: 50px auto;
-  border: 2px solid #000;
+  width: 100vw; /* Ocupa el ancho completo de la ventana */
+  height: 100vh; /* Ocupa la altura completa de la ventana */
+  margin: 0; /* Elimina los márgenes para que ocupe todo el espacio disponible */
+  border: none; /* Elimina los bordes */
   border-radius: 5px;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 10px rgba(189, 184, 184, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  animation: float 3s ease-in-out infinite;
-  animation-direction: alternate;
-  animation-delay: 0s;
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(10px);
-  }
 }
 
 h1 {
@@ -38,6 +29,13 @@ h1 {
 #code-container {
   display: flex;
   flex-direction: column;
+  width: 300px; /* Establece el ancho deseado para el contenedor */
+  height: 200px; /* Establece la altura deseada para el contenedor */
+  background-color: #bdbdbd; /* Color de fondo similar al de una caja registradora */
+  border: 2px solid #afa4af; /* Borde con un tono similar al material */
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra para simular una caja */
 }
 
 #code-input {
@@ -52,8 +50,6 @@ h1 {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-
-
 #submit-code-button {
   align-self: flex-end;
   margin-top: 10px;
@@ -67,34 +63,32 @@ h1 {
 /* Estilos para el boton de ayuda */
 #help-button {
   position: fixed;
-  top: 20px; /* ajusta el valor de 'top' según tu preferencia */
-  right: -730px; /* ajusta el valor de 'right' según tu preferencia */
+  top: 10px; /* Ajusta el valor de 'top' según tu preferencia */
+  right: 20px; /* Ajusta el valor de 'right' según tu preferencia */
   background-repeat: no-repeat;
   background-position: center;
   text-indent: -9999px;
-  width: 24px;
-  height: 24px;
+  width: 50px; /* Ajusta el valor de 'width' según tu preferencia */
+  height: 50px; /* Ajusta el valor de 'height' según tu preferencia */
   border: none;
-  margin: -50px auto;
-  background-color: red;
+  margin: 0;
+  background-color: transparent; /* Cambia el color de fondo a transparente */
+  background-image: url('https://cdn-icons-png.flaticon.com/128/906/906794.png'); /* Reemplaza 'ruta_de_la_imagen.png' con la ruta de tu imagen */
 }
-
-
 #help-container {
   position: fixed;
-  top: -20px;
-  right: -700px;
+  top: 50px;
+  right: 1px;
   float: none;
-  color: green;
-  border: 1px solid black;
+  color: rgb(20, 20, 19);
+  border: 1px solid rgb(138, 127, 127);
   padding: 10px;
-  background-color: transparent;
-  max-height: 90%;
+  max-height: 20%;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
+  background-image: linear-gradient(to bottom, #a890ad, #d3ccd4); /* Agrega los colores degradados que desees */
 }
-
 
 #frutas-button,
 #verduras-button,
