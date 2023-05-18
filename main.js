@@ -79,7 +79,7 @@ const products = {
   "256469": "uva jack salute x kg",
   "4535": "uva red globe m x kg",
   "4393": "uva sultana nac m x kg",
-  "4395": "uva vallet metro".
+  "4395": "uva vallet metro",
   "7751906000023": "1/2 col China ",
   "7752347000030": "1/2 col corazon",
   "7751906000320": "acelga",
